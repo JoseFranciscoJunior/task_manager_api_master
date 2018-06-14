@@ -1,10 +1,10 @@
 require 'rails_helper'
 
-RSpec.describe Task, type: :model do
-  let(:task) { build(:task) } # chama o Factory Girl para criar uma task com dados faker
+RSpec.describe Laboratory, type: :model do
+  let(:laboratory) { build(:laboratory) } # chama o Factory Girl para criar uma laboratory com dados faker
 
   context 'When is new' do
-    it { expect(task).not_to be_done } # "be_" usado para campos booleanos.
+    it { expect(laboratory).not_to be_done } # "be_" usado para campos booleanos.
   end
 
   it { is_expected.to belong_to(:user) }

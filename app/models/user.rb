@@ -10,7 +10,7 @@ class User < ApplicationRecord
   validates_uniqueness_of :auth_token
   before_create :generate_authentication_token!
 
-  has_many :tasks, dependent: :destroy # apagar as tarefas dos usuários
+  has_many :laboratories, dependent: :destroy # apagar as tarefas dos usuários
 
  
   def info

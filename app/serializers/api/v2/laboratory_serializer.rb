@@ -1,4 +1,4 @@
-class Api::V2::TaskSerializer < ActiveModel::Serializer
+class Api::V2::LaboratorySerializer < ActiveModel::Serializer
   attributes :id, :title, :description, :done, :deadline, :user_id, :created_at, :updated_at,
               :short_description, :is_late, :deadline_to_br
 

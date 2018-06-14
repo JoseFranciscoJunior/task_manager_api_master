@@ -1,6 +1,6 @@
-class CreateTasks < ActiveRecord::Migration[5.0]
+class CreateLaboratories < ActiveRecord::Migration[5.0]
   def change
-    create_table :tasks do |t|
+    create_table :laboratories do |t|
       t.string :title
       t.text :description
       t.boolean :done, default: false
